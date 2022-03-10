@@ -7,66 +7,74 @@
 }
 
 @font-face {
-    font-family: 'plus-Jakarta-Sans';
-    src: url('/fonts/PlusJakartaSans-ExtraLight.woff2') format('woff2'),
-        url('/fonts/PlusJakartaSans-ExtraLight.woff') format('woff');
+    font-family: 'Manrope';
+    src: url('/fonts/Manrope-ExtraLight.otf') format('otf');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'plus-Jakarta-Sans';
-    src: url('/fonts/PlusJakartaSans-Medium.woff2') format('woff2'),
-        url('/fonts/PlusJakartaSans-Medium.woff') format('woff');
+    font-family: 'Manrope';
+    src: url('/fonts/Manrope-Medium.otf') format('otf');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'plus-Jakarta-Sans';
-    src: url('/fonts/PlusJakartaSans-Light.woff2') format('woff2'),
-        url('/fonts/PlusJakartaSans-Light.woff') format('woff');
+    font-family: 'Manrope';
+    src: url('/fonts/Manrope.woff2') format('otf');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'plus-Jakarta-Sans';
-    src: url('/fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
-        url('/fonts/PlusJakartaSans-Regular.woff') format('woff');
+    font-family: 'Manrope';
+    src: url('/fonts/Manrope-Regular.otf') format('otf');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'plus-Jakarta-Sans';
-    src: url('/fonts/PlusJakartaSans-Bold.woff2') format('woff2'),
-        url('/fonts/PlusJakartaSans-Bold.woff') format('woff');
+    font-family: 'Manrope';
+    src: url('/fonts/Manrope-Bold.otf') format('otf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'plus-Jakarta-Sans';
-    src: url('/fonts/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
-        url('/fonts/PlusJakartaSans-ExtraBold.woff') format('woff');
+    font-family: 'Manrope';
+    src: url('/fonts/Manrope-ExtraBold.otf') format('otf');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'plus-Jakarta-Sans';
-    src: url('/fonts/Butler.woff2') format('woff2'),
-        url('/fonts/Butler.woff') format('woff');
+    font-family: 'Manrope';
+    src: url('/fonts/Manrope-Regular.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
 
+a{
+  font-family: 'Manrope', sans-serif;
+}
 
 body {
   margin: 0;
   overflow-x: none;
   background-color: var(--secondary);
+}
+
+h1{
+  font-family: 'Manrope', sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+h2{
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 header {
@@ -81,13 +89,41 @@ html{
   scroll-behavior: smooth;
 }
 
+p{
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
 section {
   position: relative;
+  padding: 0 0.94rem;
+}
+
+.down-btn{
+  z-index: 10;
+  position: relative;
+}
+
+.down-btn img{
+  margin: auto;
+  display: block;
 }
 
 .hero{
   position: relative;
   top: -10.5rem;
+  margin-bottom: -8.5rem;
+}
+
+.hero-section{
+  padding: 0;
+}
+.hero-section::after{
+  content: url('/images/tracks.svg');
+  position: absolute;
+  bottom: -47%;
+  z-index: 5;
 }
 
 .hero__bg{
@@ -96,12 +132,41 @@ section {
   object-fit: cover;
 }
 
+.hero__buttons{
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 2rem;
+  z-index: 20;
+  position: relative;
+}
+
 .hero__img{
   max-width: 100vw;
 }
 
+.hero__text{
+  padding: 0 0.94rem;
+}
+
 .logo img{
   height: 2.5rem;
+}
+
+.main-btn{
+   font-weight: bold;
+   font-size: 1rem;
+   background: var(--primary);
+   padding: 1rem 3rem 1rem 2rem;
+   border-radius: 6px;
+   color: var(--secondary);
+   text-decoration: none;
+   position: relative;
+}
+.main-btn::after{
+  content: url(/images/white-arrow.svg);
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
 }
 
 .menu{
@@ -128,7 +193,7 @@ section {
   text-align: center;
   font-size: 1.69rem;
   text-decoration: none;
-  font-family: 'plus-Jakarta-Sans', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: bold;
   color: var(--tertiary);
   margin: 1rem 0;
@@ -143,6 +208,61 @@ section {
   left: 0;
   top: 0;
   transition: 0.3s;
+}
+
+.reason{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 48%;
+}
+.reason p{
+  text-align: center;
+}
+.reason img{
+  max-width: 6rem;
+  max-height: 6rem;
+  margin: auto;
+}
+
+#reasons{
+  margin-top: 8rem;
+}
+#reasons h2{
+  position: relative;
+}
+#reasons h2::before{
+  content: "Reasons";
+  font-family: "Manrope", sans-serif;
+  font-size: 5rem;
+  opacity: 0.07;
+  position: absolute;
+  font-weight: 800;
+  top: -4.5rem;
+}
+
+.reasons-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 3.5rem;
+}
+
+.secondary-btn{
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 2px solid var(--primary);
+  padding: 0.7rem 0 0.5rem;
+  position: relative;
+  font-weight: bold;
+  max-height: 1.1rem;
+  opacity: 0.8;
+}
+.secondary-btn::after{
+  content: url(/images/blue-arrow.svg);
+  top: 0.7rem;
+  right: -1.5rem;
+  position: absolute;
 }
 
 
