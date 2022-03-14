@@ -25,6 +25,11 @@ menuCloseButton.addEventListener('click', menuClose);
 
 menuItems.addEventListener('click', menuClose);
 
+//star rating code
+/*const review = document.querySelectorAll('.review');
+const rating = review
+review.forEach(addStars);
+*/
 
 // Load this script after everything else (document is ready)
 document.addEventListener("DOMContentLoaded", function(event) {
