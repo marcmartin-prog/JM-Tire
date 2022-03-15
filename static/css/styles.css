@@ -1,7 +1,7 @@
 :root {
   --primary: #2c3590;
   --secondary: #ffffff;
-  --tertiary: #1d1a17;
+  --tertiary: #454866;
   --quaternary: #89949e;
   --quinary: #394241;
 }
@@ -112,11 +112,34 @@ p{
 .small{
   font-size: 0.875rem;
   letter-spacing: -0.14px;
+  line-height: 1.71;
 }
 
 section {
   position: relative;
   padding: 0 0.94rem;
+}
+
+#about{
+  margin-top: 6rem;
+}
+#about h2::before{
+  content: "About Us";
+  font-family: "Manrope", sans-serif;
+  font-size: 4.5rem;
+  opacity: 0.07;
+  position: absolute;
+  font-weight: bold;
+  top: -3rem;
+  letter-spacing: -1.6px;
+}
+
+.about_img{
+  width:90vw;
+  height: 90vw;
+  object-fit: cover;
+  border-radius: 6px;
+
 }
 
 .brands{
@@ -126,8 +149,8 @@ section {
 }
 .brands img{
   flex: 1;
-  width: 9rem;
-  height: 3rem;
+  width: 10rem;
+  height: 4rem;
   object-fit: contain;
 }
 
@@ -156,6 +179,93 @@ section {
   display: block;
 }
 
+.footer{
+  padding: 3rem 0.94rem 0.94rem;
+}
+.footer div{
+  margin: 1rem 0;
+  border-bottom: solid 1px #ebebeb;
+}
+.footer_brands{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+.footer_brands img{
+  flex: 1;
+  width: 9rem;
+  height: 3rem;
+  object-fit: contain;
+}
+.footer_info{
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+.footer_info *{
+  position: relative;
+  color: var(--tertiary);
+  font-size: 1.125rem;
+}
+.footer_info a{
+  text-decoration: none;
+}
+.footer_logo{
+  display: flex;
+  gap:1.5rem;
+  padding-bottom: 1rem;
+}
+.footer_logo img{
+  height: 4rem;
+}
+.address::before{
+  content: url(/images/address.svg);
+  position: absolute;
+  left: -2.5rem;
+  top: 0.5rem;
+}
+.hours::before{
+  content: url(/images/hours.svg);
+  position: absolute;
+  left: -2.5rem;
+  top: 0.5rem;
+}
+
+.phone::before{
+  content: url(/images/phone.svg);
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+}
+.mail::before{
+  content: url(/images/email.svg);
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+}
+
+.footer_links{
+  padding-bottom: 0;
+}
+
+.footer_links a{
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--tertiary);
+  margin: 1rem auto 2rem 0;
+  display: block;
+  position: relative;
+  width: max-content;
+}
+.footer_links a::after{
+  content: url(/images/arrow-link.svg);
+  position: absolute;
+  right: -1.2rem;
+  top: 0;
+  transform: rotate(270deg);
+}
+
 .hero{
   position: relative;
   top: -10.5rem;
@@ -165,7 +275,7 @@ section {
 .hero-section{
   padding: 0;
 }
-.hero-section::after{
+.hero-section::after, #about::after{
   content: url('/images/tracks.svg');
   position: absolute;
   bottom: -47%;
