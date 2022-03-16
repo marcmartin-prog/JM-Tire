@@ -98,6 +98,15 @@ header {
   padding: 1.5rem 1rem;
 }
 
+hr{
+  height: 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #ebebeb;
+  width: 100%;
+}
+
 html{
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -135,8 +144,8 @@ section {
 }
 
 .about_img{
-  width:90vw;
-  height: 90vw;
+  width:91vw;
+  height: 91vw;
   object-fit: cover;
   border-radius: 6px;
 
@@ -169,6 +178,14 @@ section {
   letter-spacing: -1.6px;
 }
 
+.details a{
+  color: var(--tertiary);
+  text-decoration: none;
+  display: block;
+  max-width: max-content;
+  margin: auto;
+}
+
 .down-btn{
   z-index: 10;
   position: relative;
@@ -177,6 +194,15 @@ section {
 .down-btn img{
   margin: auto;
   display: block;
+}
+
+.dropdown{
+  display: none;
+
+}
+#dropdown-element a{
+  font-size: 1.125rem;
+  margin-left: 0.94rem;
 }
 
 .footer{
@@ -303,9 +329,12 @@ section {
 .hero__text{
   padding: 0 0.94rem;
 }
+.hero__text p{
+  color: var(--tertiary);
+}
 
 .light{
-  opacity: 0.6;
+  color: #89949e;
 }
 
 .logo img{
@@ -366,17 +395,34 @@ section {
 .menu-items{
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin: 2rem 0.94rem;
 }
 
-.menu-items a{
-  text-align: center;
-  font-size: 1.69rem;
+.menu-items a, .menu-items p{
+  text-align: left;
+  font-size: 1.35rem;
   text-decoration: none;
   font-family: 'Manrope', sans-serif;
   font-weight: bold;
-  color: var(--tertiary);
+  color: #272928;
   margin: 1rem 0;
+  position: relative;
+  max-width: max-content;
+  display: block;
+
+}
+.menu-items a::after{
+  content: url(/images/arrow-link.svg);
+  position: absolute;
+  right: -1.2rem;
+  top: 0;
+  transform: rotate(270deg);
+}
+.menu-items p::after{
+  content: url(/images/arrow-link.svg);
+  position: absolute;
+  right: -1.2rem;
+  top: 0;
 }
 
 .mobile-menu{
@@ -415,7 +461,7 @@ section {
 }
 
 #reasons{
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 #reasons h2, #services h2{
   position: relative;
@@ -426,8 +472,8 @@ section {
   font-size: 5rem;
   opacity: 0.07;
   position: absolute;
-  font-weight: 800;
-  top: -4rem;
+  font-weight: bold;
+  top: -3.5rem;
   letter-spacing: -1.6px;
 }
 
@@ -440,6 +486,7 @@ section {
 
 .regular{
   font-weight: normal;
+  line-height: 1.71;
 }
 
 .reviews{
@@ -549,10 +596,15 @@ section {
   position: absolute;
 }
 
+.secondary-hero-img{
+  max-width: 91vw;
+  margin: 0 0.94rem;
+}
+
 .service{
   margin-bottom: 5rem;
 }
-.service img{
+.service img, .service-rs img{
   width: 100%;
   border-radius: 6px;
   margin-bottom: 1.5rem;
@@ -571,8 +623,8 @@ section {
   font-size: 5rem;
   opacity: 0.07;
   position: absolute;
-  font-weight: 800;
-  top: -4rem;
+  font-weight: bold;
+  top: -3.5rem;
   letter-spacing: -1.6px;
 }
 

@@ -11,12 +11,14 @@ function menuOpen (){
   mobileMenu.style.height = "100vh";
   mobileMenu.style.width = "100vw";
   mobileMenu.style.opacity = "1";
+  mobileMenu.style.zIndex = "10";
 }
 
 function menuClose (){
   mobileMenu.style.height ="0";
   mobileMenu.style.width ="0";
   mobileMenu.style.opacity = "0";
+  mobileMenu.style.zIndex = "0";
 }
 
 hamburger.addEventListener('click', menuOpen);
@@ -24,6 +26,19 @@ hamburger.addEventListener('click', menuOpen);
 menuCloseButton.addEventListener('click', menuClose);
 
 menuItems.addEventListener('click', menuClose);
+
+const dropdown = document.querySelector('#dropdown');
+const dropdownEl = document.querySelector('#dropdown-element');
+
+dropdown.addEventListener('click', function(){
+  if(dropdownEl.style.display == 'block'){
+    dropdownEl.style.display = 'none';
+  }else{
+    dropdownEl.style.display = 'block';
+  }
+});
+
+
 
 //star rating code
 /*const review = document.querySelectorAll('.review');
