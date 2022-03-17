@@ -65,6 +65,14 @@ body {
   background-color: var(--secondary);
 }
 
+form{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary);
+  padding: 1.5rem 1rem 1rem;
+  border-radius: 6px;
+}
+
 h1{
   font-family: 'Manrope', sans-serif;
   font-size: 2.25rem;
@@ -112,6 +120,52 @@ html{
   scroll-behavior: smooth;
 }
 
+input, textarea{
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid rgb(39, 48, 67, 0.2);
+  padding: 0 20px 10px 0;
+}
+input[type=file]{
+  border-bottom: none;
+  display: none;
+}
+
+input[type=email], input[type=text], input[type=phone], textarea{
+  background-color: var(--secondary);
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+input[type=email], input[type=button] {
+-webkit-appearance: none;
+-webkit-border-radius: 0;
+}
+input[type=submit]{
+  border-radius: 6px;
+  padding: 1.128rem 2rem;
+  width: 100%;
+  letter-spacing: 2.24px;
+  background-color: var(--primary);
+  position: relative;
+  color: var(--secondary);
+}
+
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+}
+input[type=text], input[type=button], select {
+-webkit-appearance: none;
+-webkit-border-radius: 0;
+}
+
+label{
+  color: var(--tertiary);
+  font-weight: bold;
+}
+
 p{
   font-family: 'Manrope', sans-serif;
   font-size: 1.125rem;
@@ -151,6 +205,38 @@ section {
 
 }
 
+.area{
+  font-size: 1.68rem;
+  margin-left: 3rem;
+  position: relative;
+}
+.area::before{
+  width: 2.2rem;
+  height: 4px;
+  content: "";
+  position: absolute;
+  background-color: #272928;
+  left: -3rem;
+  top: 40%;
+}
+.areas{
+  margin-top: 7rem;
+}
+.areas h2::before{
+  content: "Areas";
+  font-family: "Manrope", sans-serif;
+  font-size: 5rem;
+  opacity: 0.07;
+  position: absolute;
+  font-weight: bold;
+  top: -3.5rem;
+  letter-spacing: -1.6px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
 .brands{
   display: flex;
   gap: 1rem;
@@ -173,8 +259,8 @@ section {
   font-size: 5rem;
   opacity: 0.07;
   position: absolute;
-  font-weight: 800;
-  top: -4rem;
+  font-weight: bold;
+  top: -3.5rem;
   letter-spacing: -1.6px;
 }
 
@@ -340,6 +426,18 @@ section {
 .logo img{
   height: 2.5rem;
 }
+.mail-light{
+  position: relative;
+  left: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+.mail-light::before{
+  content: url(/images/mail-light.svg);
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+}
 
 .main-btn{
    font-weight: bold;
@@ -435,6 +533,20 @@ section {
   top: 0;
   transition: 0.3s;
 }
+
+.phone-light{
+  position: relative;
+  left: 2.5rem;
+  display: block;
+  margin: 0 0 1.5rem 0;
+}
+.phone-light::before{
+  content: url(/images/phone-light.svg);
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+}
+
 
 .rating{
   max-width: max-content;
@@ -579,6 +691,28 @@ section {
   scroll-snap-type:x mandatory;
 }
 
+.rs-contact{
+  background-image: url(/images/tread-bg.jpg);
+  padding: 5.5rem 0.94rem;
+}
+.rs-contact h2::before{
+  content: "Get In Touch";
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5rem;
+  opacity: 0.07;
+  position: absolute;
+  font-weight: bold;
+  top: 5rem;
+  letter-spacing: -1.6px;
+  color: var(--secondary);
+}
+.rs-contact h2, .rs-contact p, .rs-contact a{
+  color: var(--secondary);
+}
+.rs-contact p{
+  font-size: 1rem;
+}
+
 .secondary-btn{
   color: var(--primary);
   text-decoration: none;
@@ -604,7 +738,7 @@ section {
 .service{
   margin-bottom: 5rem;
 }
-.service img, .service-rs img{
+.service img, .service-rs img, .areas img{
   width: 100%;
   border-radius: 6px;
   margin-bottom: 1.5rem;
@@ -626,6 +760,17 @@ section {
   font-weight: bold;
   top: -3.5rem;
   letter-spacing: -1.6px;
+}
+
+.submit{
+  position: relative;
+}
+
+.submit::after{
+  content: url(/images/white-arrow.svg);
+  position: absolute;
+  right: 31%;
+  top: 1.1rem;
 }
 
 
