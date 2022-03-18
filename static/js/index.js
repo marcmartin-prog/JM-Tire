@@ -11,7 +11,7 @@ function menuOpen (){
   mobileMenu.style.height = "100vh";
   mobileMenu.style.width = "100vw";
   mobileMenu.style.opacity = "1";
-  mobileMenu.style.zIndex = "10";
+  mobileMenu.style.zIndex = "21";
 }
 
 function menuClose (){
