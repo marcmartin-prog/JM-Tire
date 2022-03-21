@@ -7,7 +7,7 @@ title = "JM Tire"
     allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
     osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
   [security.funcs]
-    getenv = ['^HUGO_', 'GOOGLE_KEY']
+    getenv = ['^HUGO_', 'GOOGLE_KEY', 'HUGO_GOOGLE_KEY']
   [security.http]
     methods = ['(?i)GET|POST']
     urls = ['.*']
