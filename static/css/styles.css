@@ -936,6 +936,17 @@ section {
 
 @media only screen and (min-width: 700px){
 
+  #about>div{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+
+  .about_img{
+    width: 45vw;
+    height: 45vw;
+  }
+
   .down-btn img{
     margin-left: 0.94rem;
   }
@@ -1002,6 +1013,10 @@ section {
   .service img{
     max-width: 48vw;
     min-width: 48vw;
+  }
+
+  #services{
+    margin-top: 9rem;
   }
 }
 
