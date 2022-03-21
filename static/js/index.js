@@ -38,6 +38,17 @@ dropdown.addEventListener('click', function(){
   }
 });
 
+const dropdownDT = document.querySelector('#dropdown-dt');
+const dropdownElDT = document.querySelector('#dropdown-element-dt');
+
+dropdownDT.addEventListener('click', function(){
+  if(dropdownElDT.style.display == 'flex'){
+    dropdownElDT.style.display = 'none';
+  }else{
+    dropdownElDT.style.display = 'flex';
+  }
+});
+
 
 
 //star rating code
