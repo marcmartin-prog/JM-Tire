@@ -222,6 +222,12 @@ section {
 .areas{
   margin-top: 7rem;
 }
+.areas::after{
+  content: url('/images/tracks-m.svg');
+  position: absolute;
+  bottom: 3rem;
+  z-index: 5;
+}
 .areas h2::before{
   content: "Areas";
   font-family: "Manrope", sans-serif;
@@ -345,6 +351,8 @@ section {
 
 .footer{
   padding: 3rem 0.94rem 0.94rem;
+  position: relative;
+  z-index: 25;
 }
 .footer div{
   margin: 1rem 0;
@@ -864,14 +872,14 @@ section {
 .tips{
   margin-bottom: 9rem;
 }
-
+/*
 .tips::after{
   content: url(/images/tracks.svg);
   position: absolute;
   z-index: 5;
   bottom: -27rem;
   left: 0;
-}
+}*/
 
 .tips div{
   position: relative;
@@ -879,7 +887,7 @@ section {
   margin-top: 1rem;
   z-index: 10;
 }
-.tips div::before{
+.tips>div div::before{
   content: url(/images/Check.svg);
   position: absolute;
   top: 0;
@@ -947,20 +955,49 @@ section {
     height: 45vw;
   }
 
+  .areas>div{
+    display: flex;
+    gap: 1rem;
+  }
+  .areas>div *{
+    flex: 1;
+  }
+
+  .areas::after{
+    content: url(/images/tracks.svg);
+    bottom: -33rem;
+    z-index: -1;
+  }
+
+  .com-tires img{
+    max-width: 100%;
+  }
+  .com-tires{
+    max-width: 30rem;
+    margin: auto;
+  }
+
   .down-btn img{
     margin-left: 0.94rem;
+  }
+
+
+  .footer_center{
+    display: flex;
+    gap: 4rem;
   }
 
   .hero{
     display: flex;
     flex-direction: row-reverse;
-    top: -15.5rem;
+    top: -16.5rem;
     margin-bottom: -11.5rem;
   }
 
   .hero-section::after, #about::after{
     content: url('/images/tracks.svg');
     bottom: -40rem;
+    z-index: -1;
   }
 
   .hero__bg{
@@ -993,6 +1030,10 @@ section {
     gap: 1rem;
   }
 
+  #reasons{
+    margin-top: 5rem;
+  }
+
   .service{
     display: flex;
     gap: 2rem;
@@ -1010,13 +1051,50 @@ section {
     position: absolute;
     right: 0;
   }
+
+  .rs-contact{
+    display: flex;
+    gap: 2rem;
+  }
+  .rs-contact div{
+    flex: 1;
+    max-width: 50vw;
+  }
+
+  .secondary-hero-img{
+    max-width: 42vw;
+  }
   .service img{
     max-width: 48vw;
     min-width: 48vw;
   }
 
+  .service-parent{
+    display: flex;
+    gap: 1rem;
+  }
+
   #services{
     margin-top: 9rem;
+  }
+
+  .tips>div{
+    display: flex;
+    gap: 3rem;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .tips>div div{
+    flex: 1;
+    padding-top: 0;
+    padding-left: 3rem;
+  }
+  .tips>div div::before{
+    top: 1rem;
+  }
+
+  .tips img{
+    margin-top: -12.5rem;
   }
 }
 
