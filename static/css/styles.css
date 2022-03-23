@@ -872,14 +872,14 @@ section {
 .tips{
   margin-bottom: 9rem;
 }
-/*
+
 .tips::after{
   content: url(/images/tracks.svg);
   position: absolute;
-  z-index: 5;
-  bottom: -27rem;
+  z-index: -2;
+  bottom: -40rem;
   left: 0;
-}*/
+}
 
 .tips div{
   position: relative;
@@ -1022,6 +1022,10 @@ section {
     color: rgba(255, 255, 255, 0.8);
   }
 
+  .logo img{
+    height: 3rem;
+  }
+
   .reason{
     max-width: 14rem;
   }
@@ -1038,6 +1042,13 @@ section {
     display: flex;
     gap: 2rem;
   }
+
+  .service-rs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
   .reverse{
     flex-direction: row-reverse;
   }
@@ -1052,11 +1063,11 @@ section {
     right: 0;
   }
 
-  .rs-contact{
+  .rs-contact, .contact{
     display: flex;
     gap: 2rem;
   }
-  .rs-contact div{
+  .rs-contact div, .contact div{
     flex: 1;
     max-width: 50vw;
   }
@@ -1095,11 +1106,66 @@ section {
 
   .tips img{
     margin-top: -12.5rem;
+    z-index: -1;
   }
 }
 
 
 @media only screen and (min-width: 1024px){
+
+  header{
+    padding: 1.5rem 3.5rem;
+  }
+
+  h2{
+    margin-left: 2rem;
+    position: relative;
+  }
+
+
+  section{
+    padding: 0 3.5rem;
+  }
+
+  #about{
+    margin: 11rem 0 -5rem;
+  }
+
+  .about_img{
+    position: relative;
+    top: -8rem;
+    width: 40vw;
+  }
+
+  .areas{
+    margin-bottom: -3rem;
+  }
+
+  .areas img{
+    position: relative;
+    top: -7rem;
+  }
+
+  .com-tires{
+    max-width: unset;
+    margin-top: 3rem;
+  }
+  .com-tires>div{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+  .com-tires>div *{
+    flex: 1;
+  }
+
+  .down-btn img{
+    margin-left: 3.5rem;
+  }
+
+ .secondary{
+    top: -4rem;
+  }
 
   .dropdown-dt{
     display: none;
@@ -1121,8 +1187,27 @@ section {
     margin-left: 0.94rem;
   }
 
+  .footer{
+    padding: 3rem 3.5rem 0.94rem;
+    display: flex;
+    gap: 2rem;
+  }
+  .footer_logo, .footer_center{
+    flex-direction: column;
+    min-width: 25%;
+    gap: 0;
+  }
+
   .hamburger{
     display: none;
+  }
+
+  .hero__buttons{
+    margin-top: 7.5rem;
+  }
+
+  .hero__text{
+    padding-left: 3.5rem;
   }
 
   .menu{
@@ -1149,5 +1234,19 @@ section {
   .menu p{
     margin-block-start: 0;
     margin-top: 1rem;
+  }
+
+  .rs-contact{
+    padding: 5.5rem 3.5rem;
+  }
+
+  .tips img{
+    left: -3.5rem;
+  }
+
+  .types h2::before, .tips-com--h2::before, .brands-section h2::before, .rs-contact h2::before, #reasons h2::before, #services h2::before, .reviews h2::before, #about h2::before, .tips-ag--h2::before{
+      margin-left: -2rem;
+      font-size: 4.5rem;
+      top: -3rem;
   }
 }
