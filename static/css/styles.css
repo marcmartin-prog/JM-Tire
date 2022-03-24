@@ -1204,7 +1204,7 @@ section {
   }
 
   .hero__buttons{
-    margin-top: 7.5rem;
+    margin-top: 5.5rem;
   }
 
   .hero__text{
@@ -1260,6 +1260,10 @@ section {
 
 @media only screen and (min-width: 1280px){
 
+  a{
+    font-size: 1rem;
+  }
+
   h1{
     font-size: 4rem;
   }
@@ -1270,8 +1274,41 @@ section {
     font-size: 1.9rem;
   }
 
+  p{
+    font-size: 1.25rem;
+  }
+
+  #about>div{
+    gap: 7rem;
+  }
+  #about{
+    margin-top: 18rem;
+  }
+  #about::after{
+   bottom: -7rem;
+   left: -3.5rem;
+  }
+
+  .about_img{
+    height: 50vw;
+    top: -15rem;
+  }
+
+  .commercial{
+    max-width: 45rem;
+  }
+
   .down-btn{
     top: -11rem;
+  }
+
+  .footer_logo{
+    min-width: 17%;
+  }
+  .footer_center{
+    flex-direction: row;
+    min-width: 40%;
+    gap: 2rem;
   }
 
   .hero-section{
@@ -1286,7 +1323,7 @@ section {
     min-height: 28rem;
   }
 
-  .hero__img{
+  .hero__img, .secondary-hero-img{
     max-width: 52vw;
     position: relative;
     top: -4rem;
@@ -1306,9 +1343,177 @@ section {
     min-width: 35rem;
   }
 
+  .service-parent{
+    gap: 2rem;
+  }
+
   .types h2::before, .tips-com--h2::before, .brands-section h2::before, .rs-contact h2::before, #reasons h2::before, #services h2::before, .reviews h2::before, #about h2::before, .tips-ag--h2::before{
       font-size: 5.5rem;
 
   }
 
+  .small{
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 1366px){
+  footer{
+    padding-bottom: 1.5rem;
+  }
+
+  header{
+    padding: 1.5rem 6rem;
+  }
+
+  section{
+    padding: 0 6rem;
+  }
+
+  .areas::after{
+    left: -6rem;
+  }
+
+  .brands{
+    gap: 2rem;
+  }
+
+  .down-btn img{
+    margin-left: 6rem;
+  }
+
+  .footer{
+    padding: 3rem 6rem 0.94rem;
+  }
+
+  .hero__text{
+    padding-left: 6rem;
+  }
+
+  .logo img{
+    height: 6rem;
+  }
+
+  .menu{
+    margin-top: 1rem;
+  }
+
+  .reviews{
+    padding: 5.1rem 6rem 2.5rem;
+  }
+
+  .rs-contact, .contact{
+    padding: 5.5rem 6rem;
+  }
+
+  .tips img{
+    left: -6rem;
+  }
+}
+
+@media only screen and (min-width: 1920px){
+  a{
+    font-size:  1.125rem;
+   }
+  h1{
+    font-size: 4.5rem;
+  }
+  h2{
+    font-size: 4rem;
+  }
+  h3{
+    font-size: 2.25rem;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  .small{
+    font-size: 1.125rem;
+  }
+
+  header{
+    padding: 1.5rem 14rem;
+  }
+
+  section{
+    padding: 0 14rem;
+  }
+
+  .about_img{
+    width: 37rem;
+    height: 47rem;
+  }
+
+  .areas::after{
+    left: -14rem;
+  }
+
+  .areas{
+    margin-top: 12rem;
+  }
+
+  .areas img{
+    top: -12rem;
+  }
+
+  .down-btn{
+    top: -15rem;
+  }
+
+  .down-btn img{
+    margin-left: 14rem;
+  }
+
+  .footer{
+    padding: 3rem 14rem 0.94rem;
+  }
+
+  .hero__text{
+    padding-left: 14rem;
+  }
+
+  .hero__bg{
+    min-height: 30rem;
+  }
+
+  .hero__img, .secondary-hero-img{
+    max-width: 42vw;
+  }
+
+  .hero__buttons{
+    margin-top: 8.5rem;
+  }
+
+  .reason{
+    max-width:14rem;
+  }
+
+  .reasons-list{
+    gap: 3rem;
+    max-width: max-content;
+    margin: auto;
+  }
+
+  .reviews{
+    padding: 5.1rem 14rem 2.5rem;
+  }
+
+  .rs-contact, .contact{
+    padding: 5.5rem 14rem;
+  }
+
+  .service img{
+    max-width: 50rem;
+    min-width: 50rem;
+    left: -4rem;
+    position: relative;
+  }
+  .reverse img{
+    left: 4rem;
+  }
+
+  .tips img{
+    left: -14rem;
+  }
 }
