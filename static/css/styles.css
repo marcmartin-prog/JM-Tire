@@ -61,7 +61,7 @@ a{
 
 body {
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: var(--secondary);
 }
 
@@ -1027,7 +1027,7 @@ section {
   }
 
   .reason{
-    max-width: 14rem;
+    max-width: 13rem;
   }
 
   .reasons-list{
@@ -1163,9 +1163,10 @@ section {
     margin-left: 3.5rem;
   }
 
- .secondary{
+  .down-btn{
     top: -4rem;
   }
+
 
   .dropdown-dt{
     display: none;
@@ -1236,8 +1237,14 @@ section {
     margin-top: 1rem;
   }
 
-  .rs-contact{
+  .rs-contact, .contact{
     padding: 5.5rem 3.5rem;
+  }
+  .rs-contact_text{
+    min-width: 47vw;
+  }
+  .rs-contact form, .contact form{
+    max-width: 22rem;
   }
 
   .tips img{
@@ -1249,4 +1256,59 @@ section {
       font-size: 4.5rem;
       top: -3rem;
   }
+}
+
+@media only screen and (min-width: 1280px){
+
+  h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.9rem;
+  }
+
+  .down-btn{
+    top: -11rem;
+  }
+
+  .hero-section{
+    margin-bottom: -8rem;
+  }
+
+  .hero-section::after{
+    bottom: -24rem;
+  }
+
+  .hero__bg{
+    min-height: 28rem;
+  }
+
+  .hero__img{
+    max-width: 52vw;
+    position: relative;
+    top: -4rem;
+  }
+
+  .hero__text{
+    position: relative;
+    top: -10rem;
+  }
+
+  .logo img{
+    height: 4rem;
+  }
+
+  .service img{
+    max-width: 35rem;
+    min-width: 35rem;
+  }
+
+  .types h2::before, .tips-com--h2::before, .brands-section h2::before, .rs-contact h2::before, #reasons h2::before, #services h2::before, .reviews h2::before, #about h2::before, .tips-ag--h2::before{
+      font-size: 5.5rem;
+
+  }
+
 }
