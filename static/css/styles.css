@@ -164,6 +164,7 @@ input[type=text], input[type=button], select {
 label{
   color: var(--tertiary);
   font-weight: bold;
+  font-family: 'Manrope', sans-serif;
 }
 
 p{
@@ -949,6 +950,12 @@ section {
 .rs-contact p{
   font-size: 1rem;
 }
+.rs-contact a, .contact a{
+  transition: 0.3s;
+}
+.rs-contact a:hover, .contact a:hover{
+  opacity: 0.5;
+}
 
 .secondary-btn{
   color: var(--primary);
@@ -959,7 +966,8 @@ section {
   font-weight: bold;
   max-height: 1.1rem;
   opacity: 0.8;
-  transition: 0.4s
+  transition: 0.4s;
+    border-radius: 6px;
 }
 .secondary-btn::after{
   content: url(/images/blue-arrow.svg);
@@ -969,8 +977,8 @@ section {
 }
 
 .secondary-btn:hover{
-  padding:0.9rem;
-  border-radius: 6px;
+  padding:1rem 1rem 0.8rem;
+
   opacity: 1;
 }
 
@@ -1222,13 +1230,21 @@ section {
   .reverse h3, .reverse p{
     text-align: right;
   }
-  .reverse div{
+  .reverse div, .service div{
     position: relative;
+  }
+  .service .main-btn{
+    position: absolute;
+    left: 0;
   }
   .reverse .main-btn{
     position: absolute;
-    right: 0;
+    right: 0!important;
+    left: unset;
+    max-width: max-content;
   }
+
+
 
   .rs-contact, .contact{
     display: flex;
