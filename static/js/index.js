@@ -49,6 +49,22 @@ dropdownDT.addEventListener('click', function(){
   }
 });
 
+//reviews slider code
+const leftArrow = document.getElementById('left-arrow');
+const rightArrow = document.getElementById('right-arrow');
+const slider = document.querySelector('.reviews-slider');
+const review = document.querySelector('.review');
+const scrollByWidth = review.clientWidth;
+
+leftArrow.addEventListener('click', function(){
+  slider.scrollBy({left: -scrollByWidth, top: 0, behavior: 'smooth'});
+});
+
+rightArrow.addEventListener('click', function(){
+  slider.scrollBy({left: scrollByWidth, top: 0, behavior: 'smooth'});
+});
+
+
 
 
 //star rating code
