@@ -20,6 +20,8 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="{{ .Permalink }}" />
   <link rel="stylesheet" href="/css/styles.css">
+  <script defer data-domain="jmtire.net" src="https://plausible.io/js/plausible.js"></script>
+
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
