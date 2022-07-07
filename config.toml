@@ -1,6 +1,7 @@
 baseURL = "https://wwww.jmtire.net"
 languageCode = "en-us"
 title = "JM Tire | Northern Iowa Emergency Road Service and Tire Sales"
+enableRobotsTXT = true
 [security]
   enableInlineShortcodes = false
   [security.exec]
