@@ -1,6 +1,6 @@
 baseURL = "https://wwww.jmtire.net"
 languageCode = "en-us"
-title = "JM Tire"
+title = "JM Tire | Northern Iowa automotive, truck, and ag tire dealer"
 [security]
   enableInlineShortcodes = false
   [security.exec]
